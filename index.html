@@ -57,10 +57,6 @@
 		</script>
 
 
-
-
-
-
    <!-- <p> <div id="hidr"> HIDE MEEEEE!  </div> <div id="showr"> (but not me).</div>
     </p>
     <script>
@@ -147,7 +143,22 @@
 	});
 </script>
 
-<button> come back </button>
+<button id="buttonmove"> come back </button>
+
+<script> 
+
+	$("#buttonmove").click(function(){
+		$('.moveMe').animate({
+			right: '500px', 
+			bottom: '1000px',
+			opacity:'.5',
+			height: '150px',
+			width: '350px' 
+		
+		});
+	});
+
+</script> 
 
 <h1> Sliding </h1>
 <p class="slideToggle">Click here to toggle and eat.</p>
