@@ -260,76 +260,72 @@
 </script>
 
 <h1>Change opacity on hover </h1>
-<p>  </p>
-<p> Hover over one of the items below to see the rest fade <ul style="list-style-type:none"> 
-	<li id="yc1"> Yellow </li>
-	<li id="yc2"> Orange </li>
-	<li id="yc3"> Red </li>
-	<li id="yc4"> Green </li>
-	<li id="yc5"> Blue </li>
-	<li id="yc6"> Purple </li> </ul>
+<p> Hover over any one of the boxes below to have the rest fade out </br>
+	<img class="fadeInC" id="a" src="images/01.jpg"/>
+	<img class="fadeInC" id="b" src="images/02.jpg"/>
+	<img class="fadeInC" id="c" src="images/03.jpg"/>
+	<img class="fadeInC" id="d" src="images/04.jpg"/>
+	<img class="fadeInC" id="e" src="images/05.jpg"/>
+	<img class="fadeInC" id="f" src="images/06.jpg"/> </br>
 </p>
- </br>
-	<img class="fadeIn1" src="images/01.jpg"/>
-	<img class="fadeIn2" src="images/02.jpg"/>
-	<img class="fadeIn3" src="images/03.jpg"/>
-	<img class="fadeIn4" src="images/04.jpg"/>
-	<img class="fadeIn5" src="images/05.jpg"/>
-	<img class="fadeIn6" src="images/06.jpg"/>
 
-<script> 
-	$('img.fadeIn1').css({'opacity': 1});  
-	$('img.fadeIn2').css({'opacity': 1});  
-	$('img.fadeIn3').css({'opacity': 1});  
-	$('img.fadeIn4').css({'opacity': 1});
-	$('img.fadeIn5').css({'opacity': 1});
+<script type='text/javascript'>
+	$(function() {       
+        $("img.fadeInC").css("opacity","1.0");        
+        $("img.fadeInC").hover(function() {
+                var myID = $(this).attr("id");        
+                $("img.fadeInC:not(#"+myID+")").stop().animate({'opacity': 0.5});
+        },           
+        function() {       
+                $("img.fadeInC").stop().animate({'opacity': 1.0});        
+        });    
+});
 
-	$('img.fadeIn1').hover(function(){
-		$('img.fadeIn2').stop().animate({'opacity': .4});
-		$('img.fadeIn3').stop().animate({'opacity': .4});
-		$('img.fadeIn4').stop().animate({'opacity': .4});
-		$('img.fadeIn5').stop().animate({'opacity': .4});
-		$('img.fadeIn6').stop().animate({'opacity': .4});
+</script> 
+
+
+
+<script >
+	$('img.fadeIn2b').hover(function(){
+		$('img.fadeIn1b').stop().animate({'opacity': .4});
+		$('img.fadeIn3b').stop().animate({'opacity': .4});
+		$('img.fadeIn4b').stop().animate({'opacity': .4});
+		$('img.fadeIn5b').stop().animate({'opacity': .4});
+		$('img.fadeIn6b').stop().animate({'opacity': .4});
 	});
+	</script>
+	<script> 
 
-	$('img.fadeIn2').hover(function(){
-		$('img.fadeIn1').stop().animate({'opacity': .4});
-		$('img.fadeIn3').stop().animate({'opacity': .4});
-		$('img.fadeIn4').stop().animate({'opacity': .4});
-		$('img.fadeIn5').stop().animate({'opacity': .4});
-		$('img.fadeIn6').stop().animate({'opacity': .4});
-	});
-
-	$('img.fadeIn3').hover(function(){
-		$('img.fadeIn1').stop().animate({'opacity': .4});
-		$('img.fadeIn2').stop().animate({'opacity': .4});
-		$('img.fadeIn4').stop().animate({'opacity': .4});
-		$('img.fadeIn5').stop().animate({'opacity': .4});
-		$('img.fadeIn6').stop().animate({'opacity': .4});
+	$('img.fadeIn3b').hover(function(){
+		$('img.fadeIn1b').stop().animate({'opacity': .4});
+		$('img.fadeIn2b').stop().animate({'opacity': .4});
+		$('img.fadeIn4b').stop().animate({'opacity': .4});
+		$('img.fadeIn5b').stop().animate({'opacity': .4});
+		$('img.fadeIn6b').stop().animate({'opacity': .4});
 	});
 	
-	$('img.fadeIn4').hover(function(){
-		$('img.fadeIn1').stop().animate({'opacity': .4});
-		$('img.fadeIn2').stop().animate({'opacity': .4});
-		$('img.fadeIn3').stop().animate({'opacity': .4});
-		$('img.fadeIn5').stop().animate({'opacity': .4});
-		$('img.fadeIn6').stop().animate({'opacity': .4});
+	$('img.fadeIn4b').hover(function(){
+		$('img.fadeIn1b').stop().animate({'opacity': .4});
+		$('img.fadeIn2b').stop().animate({'opacity': .4});
+		$('img.fadeIn3b').stop().animate({'opacity': .4});
+		$('img.fadeIn5b').stop().animate({'opacity': .4});
+		$('img.fadeIn6b').stop().animate({'opacity': .4});
 	});
 
-	$('img.fadeIn5').hover(function(){
-		$('img.fadeIn1').stop().animate({'opacity': .4});
-		$('img.fadeIn2').stop().animate({'opacity': .4});
-		$('img.fadeIn3').stop().animate({'opacity': .4});
-		$('img.fadeIn4').stop().animate({'opacity': .4});
-		$('img.fadeIn6').stop().animate({'opacity': .4});
+	$('img.fadeIn5b').hover(function(){
+		$('img.fadeIn1b').stop().animate({'opacity': .4});
+		$('img.fadeIn2b').stop().animate({'opacity': .4});
+		$('img.fadeIn3b').stop().animate({'opacity': .4});
+		$('img.fadeIn4b').stop().animate({'opacity': .4});
+		$('img.fadeIn6b').stop().animate({'opacity': .4});
 	});
 
-	$('img.fadeIn6').hover(function(){
-		$('img.fadeIn1').stop().animate({'opacity': .4});
-		$('img.fadeIn2').stop().animate({'opacity': .4});
-		$('img.fadeIn3').stop().animate({'opacity': .4});
-		$('img.fadeIn4').stop().animate({'opacity': .4});
-		$('img.fadeIn5').stop().animate({'opacity': .4});
+	$('img.fadeIn6b').hover(function(){
+		$('img.fadeIn1b').stop().animate({'opacity': .4});
+		$('img.fadeIn2b').stop().animate({'opacity': .4});
+		$('img.fadeIn3b').stop().animate({'opacity': .4});
+		$('img.fadeIn4b').stop().animate({'opacity': .4});
+		$('img.fadeIn5b').stop().animate({'opacity': .4});
 	});
 	
 	
