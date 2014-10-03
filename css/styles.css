@@ -21,6 +21,10 @@ h1, h2, h3 {
 	
 }
 
+#changeshape. {
+			color: blue; 
+		}
+
 /* Lesson 03 */
 .horizontal {
 	float: left;
@@ -108,3 +112,18 @@ body.large .article {
 	width: 200px; 
 }
 
+
+#squarewrapper {
+	width:500px;
+	border: 1px solid black;
+}
+
+#firstsq {
+	width: 300px;
+	border: 1px solid red;
+}
+ 
+ #secondsq {
+ 	width: 100px;
+ 	border: 1px solid green;
+ }
