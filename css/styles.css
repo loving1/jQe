@@ -35,17 +35,16 @@ h1 {
 	clear: both;
 }
 
-
 .subItem {
 	background-color: #AABBCC;
 }
 
 /* Lesson 04 */
 .kenyaPhotos {
-	height: 150px; 
-	width: auto; 
+	height: auto; 
+	width: 200px; 
 	padding: 0.5em; 
-	border: 1px solid #000; 
+	border: 1px solid #022; 
 	margin-right: 0.5em; 
 	background-color: #EE0; 
 }

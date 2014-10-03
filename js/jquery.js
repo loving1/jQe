@@ -21,7 +21,7 @@ $(document).ready(function(){
 	$('img').attr('title','You can almost smell how lovely they are!').addClass('kenyaPhotos'); // shows up when hovering over 
 	
 	// above is the same as below
-	//$('img').attr('alt','Photos of Kenya.').attr('title','Photo by Sarah Soward').addClass('kenyaPhotos'); 
+	//$('img').attr('alt','Photos of Kenya.').attr('title','Photos by Wiki ').addClass('kenyaPhotos'); 
 	//
 	
 	$('div#article-1').removeAttr('id'); // dear browser, find div 1 and remove attribute of id -- will remove all of them 
