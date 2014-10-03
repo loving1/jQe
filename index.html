@@ -8,23 +8,57 @@
 		<script src="js/jquery.min.js" type="text/javascript"></script>
 		<script src="js/jquery.js" type="text/javascript"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 <div id="container">
 
+	<p> Name: <input type="text" name="fullname"><br>
+	Email: <input type="text" name="email"> </p>
+
+	<script>
+		$(document).ready(function(){
+		  $("input").focus(function(){
+		    $(this).css("background-color","#cccccc");
+		  });
+		  $("input").blur(function(){
+		    $(this).css("background-color","#ffffff");
+		  });
+		});
+		</script>
+
 <h1>Hide what you click on </h1>
-	<p> <a href="#">Click to hide me </a> (but not me). </p> 
+	<p> <a href="#">Click to hide me </a> <div id="clickme"> (but not me).</div> </p> 
     <script> 
     	$('a').click(function() { 
 			$(this).hide(); 
 			}); 
-    	//$('a').click(function(){
+    	
     	//	$(this).show();
     	//}):
     	
-
     </script>
+
+
+
+
+
+
+   <!-- <p> <div id="hidr"> HIDE MEEEEE!  </div> <div id="showr"> (but not me).</div>
+    </p>
+    <script>
+
+    	$("#hidr").click(function() {
+    		$(this).hide(1000);
+    	}
+
+    	$("#showr").click(function(){
+    		$("#hidr").show("slow", function() { 
+			});
+    	}
+    </script>
+-->
 
     
     

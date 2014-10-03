@@ -34,6 +34,15 @@ h1, h2, h3 {
 h1 {
 	clear: both;
 }
+img {
+	height: auto; 
+	width: 200px; 
+	padding: 0.5em; 
+	border: 1px solid #022; 
+	margin-right: 0.5em; 
+	background-color: #EE0; 
+
+}
 
 .subItem {
 	background-color: #AABBCC;
