@@ -112,6 +112,10 @@ body.large .article {
 	width: 200px; 
 }
 
+#colorlist li {
+	display: inline;
+	padding-right: 20px'
+}
 
 #squarewrapper {
 	width:500px;
