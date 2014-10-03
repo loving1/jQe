@@ -163,7 +163,7 @@
 	});
 
 </script> 
-
+<!--
 <button id="buttonshape"> change shape </button>
 
 <script> 
@@ -176,26 +176,39 @@
 	//	}); 
 	//});
 
-</script> 
+</script> -->
 
 
 <h1>Change opacity on click </h1>
 <p>Click on the button below to  </p>
-<button id="yc1"> Choose 1  </button>
-<button id="yc2"> Choose 2  </button>
-<button id="yc3"> Choose 3  </button>  </br>
+<p> Choose <ul> 
+	<li id="yc1"> Yellow </li>
+	<li id="yc2"> Orange </li>
+	<li id="yc3"> Red </li>
+	<li id="yc4"> Green </li>
+	<li id="yc5"> Blue </li>
+	<li id="yc6"> Purple </li> </ul>
+</p>
+ </br>
 	<img class="fadeIn1" src="images/01.jpg"/>
 	<img class="fadeIn2" src="images/02.jpg"/>
 	<img class="fadeIn3" src="images/03.jpg"/>
+	<img class="fadeIn4" src="images/04.jpg"/>
+	<img class="fadeIn5" src="images/05.jpg"/>
+	<img class="fadeIn6" src="images/06.jpg"/>
 
 <script> 
 	$('img.fadeIn1').css({'opacity': 0.4});  
 	$('img.fadeIn2').css({'opacity': 0.4});  
 	$('img.fadeIn3').css({'opacity': 0.4});  
+	$('img.fadeIn4').css({'opacity': 0.4});
+	$('img.fadeIn5').css({'opacity': 0.4});
+				$('img.fadeIn6').stop().animate({'opacity': .4});
 		$("#yc1").click(function() {
 				$('img.fadeIn1').stop().animate({'opacity': 1});
 				$('img.fadeIn2').stop().animate({'opacity': .4});
 				$('img.fadeIn3').stop().animate({'opacity': .4});
+				
 			}); 
 		$("#yc2").click(function() {
 				$('img.fadeIn2').stop().animate({'opacity': 1});
@@ -210,13 +223,13 @@
 
 </script>
 
-<div id="squareWrapper" >
+<!--<div id="squareWrapper" >
 	<div id="firstSq"> First </div>
 	<div id="secondSq">Second </div>
 </div>
 	<p class="makemeglow"> Click here to make these change color  </p>
 
-
+-->
 
 
 <h1> Sliding </h1>
