@@ -14,7 +14,7 @@
 <div id="container">
 
 <h1>Hide what you click on </h1>
-	<p> <a href="#">Click to hide me </a> (but not me). </p> <div id="four" style="display:none; width:100px; height: 100px; background-color: #3C9;"> One</div>
+	<p> <a href="#">Click to hide me </a> (but not me). </p> 
     <script> 
     	$('a').click(function() { 
 			$(this).hide(); 
@@ -23,12 +23,7 @@
 
     </script>
 
-    <p> Bring it back!<p>
-    	<script>
-			$('a.fadeIn').click(function() {
-			$('div:hidden:first').fadeIn('slow'); 
-			}); 
-    	</script> 
+    
     
 <h1>Fade in and out based on hover</h1>
 <p>Hover over image to fade it in. Move your mouse and it fades out. </p>

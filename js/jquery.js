@@ -17,8 +17,8 @@ $(document).ready(function() {
 
 // Lesson 4
 $(document).ready(function(){
-	$('img').attr('alt','Photos of Kenya.'); // add this to prevent errors can also have title shows up if there is an error 
-	$('img').attr('title','Photo by Sarah Soward').addClass('kenyaPhotos'); // shows up when hovering over 
+	$('img').attr('alt','Photos of Flowers.'); // add this to prevent errors can also have title shows up if there is an error 
+	$('img').attr('title','You can almost smell how lovely they are!').addClass('kenyaPhotos'); // shows up when hovering over 
 	
 	// above is the same as below
 	//$('img').attr('alt','Photos of Kenya.').attr('title','Photo by Sarah Soward').addClass('kenyaPhotos'); 
