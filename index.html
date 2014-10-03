@@ -178,7 +178,7 @@
 
 </script> -->
 
-
+<!--
 <h1>Change opacity on click </h1>
 <p>  </p>
 <p> Choose one color below to light it up!  <ul id="colorlist" style="list-style-type:none"> 
@@ -203,7 +203,7 @@
 	$('img.fadeIn3').css({'opacity': 0.4});  
 	$('img.fadeIn4').css({'opacity': 0.4});
 	$('img.fadeIn5').css({'opacity': 0.4});
-				$('img.fadeIn6').stop().animate({'opacity': .4});
+	$('img.fadeIn6').stop().animate({'opacity': .4});
 		$("#yc1").click(function() {
 				$('img.fadeIn1').stop().animate({'opacity': 1});
 				$('img.fadeIn2').stop().animate({'opacity': .4});
@@ -257,9 +257,9 @@
 				
 			}); 
 
-</script>
+</script> -->
 
-<h1>Change opacity on hover </h1>
+<!--<h1>Change opacity on hover </h1>
 <p> Hover over any one of the boxes below to have the rest fade out </br>
 	<img class="fadeInC" id="a" src="images/01.jpg"/>
 	<img class="fadeInC" id="b" src="images/02.jpg"/>
@@ -278,10 +278,86 @@
         },           
         function() {       
                 $("img.fadeInC").stop().animate({'opacity': 1.0});        
-        });    
+        });
+
+
+
+
 });
 
 </script> 
+-->
+
+<h1>Click and Hover  </h1>
+
+<p> Choose one color below to light it up! Or hover over to have it   <ul id="colorlist" style="list-style-type:none"> 
+	<li id="yd1"> Yellow, </li>
+	<li id="yd2"> Orange, </li>
+	<li id="yd3"> Red, </li>
+	<li id="yd4"> Green, </li>
+	<li id="yd5"> Blue, </li>
+	<li id="yd6"> Purple </li> </ul>
+</p> </br>
+	<img class="fadeInD" id="Da" src="images/01.jpg"/>
+	<img class="fadeInD" id="Db" src="images/02.jpg"/>
+	<img class="fadeInD" id="Dc" src="images/03.jpg"/>
+	<img class="fadeInD" id="Dd" src="images/04.jpg"/>
+	<img class="fadeInD" id="De" src="images/05.jpg"/>
+	<img class="fadeInD" id="Df" src="images/06.jpg"/> </br>
+</p>
+
+<script type='text/javascript'>
+	$(function() {       
+        $("img.fadeInD").css("opacity","1.0");  
+		$('img.fadeInD').hover(function() {
+			$(this).stop().animate({'opacity': 1});
+		}, function(){ 
+			$(this).stop().animate({'opacity': .4}); 
+		
+		}); 
+
+        $("img.fadeInD").hover(function() {
+                var myID = $(this).attr("id");        
+                $("img.fadeInD:not(#"+myID+")").stop().animate({'opacity': 0.4});
+        },           
+        function() {       
+                $("img.fadeInD").stop().animate({'opacity': 1.0});        
+        });    
+    });
+
+	$("#yd1").click(function() {
+				$("#Da").stop().animate({'opacity': 1});
+				$("#Db,#Dc,#Dd,#De,#Df").stop().animate({'opacity': .4});
+			}); 
+	$("#yd2").click(function() {
+				$("#Db").stop().animate({'opacity': 1});
+				$("#Da,#Dc,#Dd,#De,#Df").stop().animate({'opacity': .4});
+			}); 
+
+	$("#yd3").click(function() {
+				$("#Dc").stop().animate({'opacity': 1});
+				$("#Db,#Da,#Dd,#De,#Df").stop().animate({'opacity': .4});
+			}); 
+	$("#yd4").click(function() {
+				$("#Dd").stop().animate({'opacity': 1});
+				$("#Db,#Dc,#Da,#De,#Df").stop().animate({'opacity': .4});
+			}); 
+
+	$("#yd5").click(function() {
+				$("#De").stop().animate({'opacity': 1});
+				$("#Db,#Dc,#Dd,#Da,#Df").stop().animate({'opacity': .4});
+			}); 
+
+	$("#yd6").click(function() {
+				$("#Df").stop().animate({'opacity': 1});
+				$("#Db,#Dc,#Dd,#De,#Da").stop().animate({'opacity': .4});
+			}); 
+
+		
+
+
+</script> 
+
 
 
 
