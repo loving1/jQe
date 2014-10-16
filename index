@@ -29,7 +29,7 @@
 
 	<script type="text/javascript">
 		$(window).load(function () {
-			$('.captionfull + figcaption').each(function() {
+			$('.captionfull img + figcaption').each(function() {
 				$(this)
 				.css('top',0)
 				.css('margin-top',0)
