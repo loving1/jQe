@@ -235,7 +235,21 @@ img.fadeInD  {
 	margin: 2em auto; /*<!--// stays aligned in windwon no matter how big or small browser gets  */
 	
 	}
+
+	#div8 {
+		width: 100px;
+		background-color: #00f;
+		height: 100px; 
+		margin: 30px; 
+		cursor: pointer; 
+	}
 	
+	#div8:hover {
+		background-color: green;
+		border-radius: 50%; 
+		transition: border-radius 3s;
+		transtion: background-color 3s;
+	}
 
 /* Lesson 6 */ 
 body.large .article {
