@@ -46,12 +46,10 @@ img.imground:hover + figcaption {
 	position: relative;
 	top: 50% ;
 	vertical-align: top;
-
-	
 }
 
 img {
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .figcapt {
