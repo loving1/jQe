@@ -17,7 +17,7 @@ figure {
 .imground {
 	border: solid 2px green;
   	border-radius: 50%;
-  	vertical-align: middle;
+  	vertical-align: top;
 }
 
 .figcapt {
