@@ -38,6 +38,10 @@ img.imground:hover + figcaption {
   display: block;
 }
 
+.topimgs {
+	
+}
+
 .figcapt {
   background-color:rgba(0,0,0,0.5);
   border-radius: 6px; 
