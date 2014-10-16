@@ -122,8 +122,8 @@ img {
     background:#0e733b;			/*Fun Green*/
     border:1px solid #800000; /*Maroon*/
     color:#A3722A; /*Brownish*/
-    border-radius: 13m; 
-    text-shadow:.16em .16em .16em rgba(255,255,255,0.3);
+    border-radius: 1.3em; 
+    /*text-shadow:.16em .16em .16em rgba(255,255,255,0.3);*/
     text-transform:uppercase;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
