@@ -139,6 +139,7 @@ img {
     border:.16em solid #fff; /* Make the border match the background so it fades in nicely */
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
+    border-radius: 1.3em;
 }
 .accordion p {
     color:#333; /*Dark Grey*/
