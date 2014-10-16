@@ -52,7 +52,7 @@ img {
 	vertical-align: top;
 }
 
-.figcapt {
+.figcapt, .figcapt {
   background-color:rgba(0,0,0,0.5);
   border-radius: 6px; 
   display: none;
