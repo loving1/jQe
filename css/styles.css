@@ -236,7 +236,7 @@ img.fadeInD  {
 	
 	}
 
-	#div8 {
+	#id8 {
 		width: 100px;
 		background-color: #00f;
 		height: 100px; 
@@ -244,7 +244,7 @@ img.fadeInD  {
 		cursor: pointer; 
 	}
 	
-	#div8:hover {
+	#id8:hover {
 		background-color: green;
 		border-radius: 50%; 
 		transition: border-radius 3s;
