@@ -39,14 +39,17 @@
 		$(window).load(function () {
 			$('.captionfull img + figcaption').each(function() {
 				$(this)
-				.css('top',1)
-				.css('margin-top',1)
+				.css('top',0)
+				.css('margin-top',0)
 				.css('border-radius',"50%")
 				.css('line-height',$(this).prev().height() + 'px');
 			});
 		});
 
 	</script>
+
+	<h1> Click on These to Accordion 
+	</h1>
 
 	<p> Name: <input type="text" name="fullname"><br>
 	Email: <input type="text" name="email"> </p>
