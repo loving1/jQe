@@ -38,8 +38,12 @@ img.imground:hover + figcaption {
   display: block;
 }
 
+.topclass {
+	padding: 10px; 
+}
+
 .topimgs {
-	
+
 }
 
 .figcapt {
