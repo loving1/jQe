@@ -82,7 +82,7 @@ img.imground:hover + figcaption {
 h1 {
 	clear: both;
 }
-img {
+img.fadeIn {
 	height: auto; 
 	width: 200px; 
 	padding: 0.5em; 
