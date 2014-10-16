@@ -38,6 +38,12 @@ img.imground:hover + figcaption {
   display: block;
 }
 
+.captionfull + img.imground:hover +figcaption {
+	top: 0px;
+	margin-top: 0px; 
+	border-radius: 50%;
+}
+
 .topclass {
 	/*padding: 10px; */
 }
@@ -83,6 +89,90 @@ img {
 			color: blue; 
 		}
 
+.accordion {
+    margin:0 auto;
+    font-size:1em;
+    border:1px solid #542437;
+    border-radius:.8972em;
+    width:33.3%;
+    padding:10px;
+    background:#ffffff;
+}
+
+.accordion ul {
+	margin:0;
+    padding:0;
+    list-style:none;
+        
+}
+
+.accordion li {
+    margin:0;
+    padding:0;
+}
+
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+
+.accordion label {
+    display:block;
+    font-size:1em;
+    line-height:1em;
+    background:#0e733b;			/*Fun Green*/
+    border:1px solid #800000; /*Maroon*/
+    color:#A3722A; /*Brownish*/
+    border-radius: 13m; 
+    text-shadow:.16em .16em .16em rgba(255,255,255,0.3);
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background:#506349; /*Dark green*/
+    color:#A3722A; /*Brownish*/
+    /*text-shadow:.16px .16px .16px rgba(0,0,0,0.5) */
+}
+.accordion .content {
+    padding:0 .97em;
+    overflow:hidden;
+    border:.16em solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.accordion p {
+    color:#333; /*Dark Grey*/
+    margin:0 0 .97em;
+}
+.accordion h3 {
+    color:#333; /*Dark Grey*/
+    padding:0;
+    margin:0.16em 0;
+}
+/* Vertical */
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+}
+.vertical ul li label {
+    padding:.97em;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
+}
+.vertical ul li label:hover {
+    border:1px solid #542437; 
+}
+.vertical ul li .content {
+    border-top:0;
+    height:0em;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+    height:18.75em;
+    border:.16em solid #542437;
+}
+
+/* Inspired by:  http://jsfiddle.net/x8qn5hud/ */
 /* Lesson 03 */
 .horizontal {
 	float: left;

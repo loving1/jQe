@@ -54,8 +54,53 @@
 
 	</script>
 
-	<h1> Click on These to Accordion 
+	<h1> Simple Accordion 
 	</h1>
+
+			<div class="accordion vertical">
+		    <ul>
+		        <li>
+		            <input type="checkbox" id="checkbox-1" name="checkbox-accordion" />
+		            <label for="checkbox-1">Title&nbsp;One</label>
+		            <div class="content">
+		                <h3>Look to see what is in here</h3>
+		            </div>
+		        </li>
+		        <li>
+		            <input type="checkbox" id="checkbox-2" name="checkbox-accordion" />
+		            <label for="checkbox-2">Title&nbsp;Two</label>
+		            <div class="content">
+		                <h3>Can you find it? </h3>
+		            </div>
+		        </li>
+		        <li>
+		            <input type="checkbox" id="checkbox-3" name="checkbox-accordion" />
+		            <label for="checkbox-3">Title&nbsp;Three</label>
+		            <div class="content">
+		                <h3>Peek a boo! </h3>
+		            </div>
+		        </li>
+		        <li>
+		            <input type="checkbox" id="checkbox-4" name="checkbox-accordion" />
+		            <label for="checkbox-4">Title&nbsp;Four</label>
+		            <div class="content">
+		                <h3> Can you see me?</h3>
+		                
+		            </div>
+		        </li>
+		    </ul>
+		</div>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".accbutt").click(function() {
+			$(this).siblings().slideToggle("slow"); 
+		});
+			});
+	</script>
+
+
 
 	<p> Name: <input type="text" name="fullname"><br>
 	Email: <input type="text" name="email"> </p>
