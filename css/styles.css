@@ -43,8 +43,11 @@ img.imground:hover + figcaption {
 }
 
 .topimgs {
+	position: relative;
+	top: 50% ;
 	vertical-align: bottom;
-
+	
+	transform: translateY(-50%);
 }
 
 img {
